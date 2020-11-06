@@ -1,0 +1,17 @@
+@import 'base/normolize';
+@import 'base/variables';
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+}
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/main';
+
+.container{
+    max-width: 950px;
+    margin: 0 auto;
+    
+}
+
