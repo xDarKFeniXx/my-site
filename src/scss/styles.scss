@@ -14,4 +14,20 @@ body{
     margin: 0 auto;
     
 }
+.row{
+    display: flex;
+    flex-direction: row;
+    &_reverse {
+        flex-direction: row-reverse;
+    }
+    &_center{
+        justify-content: center;
+    }
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
 
+@import 'blocks/animated-block';
+@import 'blocks/info-block';
