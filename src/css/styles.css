@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -296,6 +298,7 @@ template {
   display: none !important;
 }
 body {
+  background: linear-gradient(45deg, #57003f 0%, #f57453 100%);
   height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -303,16 +306,8 @@ body {
       grid-template-rows: 50px 1fr 50px;
 }
 
-.header {
-  background-color: blue;
-}
-
-.footer {
-  background-color: blue;
-}
-
 .container {
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -352,6 +347,153 @@ body {
 .animated {
   width: 50%;
   padding: 10px;
+  font-family: 'Ubuntu';
+}
+
+.Terminal {
+  max-width: 600px;
+  height: 400px;
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Terminal__Toolbar {
+  background: -webkit-gradient(linear, left top, left bottom, from(#504b45), to(#3c3b37));
+  background: linear-gradient(#504b45 0%, #3c3b37 100%);
+  width: 100%;
+  padding: 0 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.Toolbar__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Toolbar__button {
+  width: 12px;
+  height: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  padding: 0;
+  font-size: 7px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7d7871), to(#595953));
+  background: linear-gradient(#7d7871 0%, #595953 100%);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0px 0px 1px 0px #41403A,0px 1px 1px 0px #474642;
+          box-shadow: 0px 0px 1px 0px #41403A,0px 1px 1px 0px #474642;
+  border: none;
+  margin-right: 4px;
+}
+
+.Toolbar__button:hover {
+  cursor: pointer;
+}
+
+.Toolbar__button--exit {
+  background: #f25d2b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f37458), to(#de4c12));
+  background: linear-gradient(#f37458 0%, #de4c12 100%);
+  background-clip: padding-box;
+}
+
+.Toolbar__button:focus {
+  outline: none;
+}
+
+.Toolbar__user {
+  color: #d5d0ce;
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 1px;
+}
+
+.Terminal__body {
+  background: rgba(56, 4, 40, 0.9);
+  height: calc(100% - 25px);
+  margin-top: -1px;
+  padding-top: 2px;
+  font-family: 'Ubuntu mono';
+}
+
+.Terminal__text {
+  color: #ddd;
+}
+
+.Terminal__Prompt {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Prompt__user {
+  color: #87d441;
+}
+
+.Prompt__location {
+  color: #6d85a9;
+}
+
+.Prompt__dollar {
+  color: #ddd;
+}
+
+.Prompt__text {
+  color: #ddd;
+}
+
+.Prompt__cursor {
+  height: 17px;
+  width: 8px;
+  background: white;
+  display: block;
+  margin-left: 8px;
+  -webkit-animation: 2000ms ease infinite alternate blink;
+          animation: 2000ms ease infinite alternate blink;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .info {
