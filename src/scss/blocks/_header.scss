@@ -1,3 +1,10 @@
 .header{
     // background-color: $header-color;
+    grid-area: header;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: #d5d0ce;
 }

@@ -302,8 +302,45 @@ body {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 50px 1fr 50px;
-      grid-template-rows: 50px 1fr 50px;
+  -ms-grid-rows: 25px 1fr;
+      grid-template-rows: 25px 1fr;
+  -ms-grid-columns: 100px 1fr;
+      grid-template-columns: 100px 1fr;
+      grid-template-areas: "header header" "sider main";
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  color: #d5d0ce;
+}
+
+.side-bar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sider;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 10px;
+}
+
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: main;
 }
 
 .container {
