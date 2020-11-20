@@ -1,7 +1,6 @@
 @import 'base/normolize';
 @import 'base/variables';
 
-
 body{
     background: linear-gradient(45deg, #57003f 0%,#f57453 100%);
     height: 100vh;
@@ -19,11 +18,12 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    
+    margin-top: 50px;
 }
 .row{
     display: flex;
     flex-direction: row;
+    align-items:flex-end;
     &_reverse {
         flex-direction: row-reverse;
     }
@@ -38,3 +38,4 @@ body{
 
 @import 'blocks/animated-block';
 @import 'blocks/info-block';
+@import 'blocks/technology-item';
