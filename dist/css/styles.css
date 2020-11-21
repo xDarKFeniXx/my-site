@@ -328,8 +328,22 @@ body {
   padding: 0 10px;
 }
 
+.side-bar__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .side-bar__item {
   color: white;
+  font-size: 10px;
+  margin: 2px auto;
+  text-align: center;
+}
+
+.side-bar__item > img {
+  width: 100%;
+  border-radius: 10%;
+  padding-bottom: 5px;
 }
 
 .main {

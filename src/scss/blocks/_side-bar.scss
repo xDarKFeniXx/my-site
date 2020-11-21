@@ -3,7 +3,19 @@
     grid-area: sider;
     background-color: rgba($color: #000000, $alpha: 0.3);
     padding: 0 10px;
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+    }
     &__item{
         color: $main-color;
+        font-size: 10px;
+        margin: 2px auto;
+        text-align: center;
+    }
+    &__item>img{
+        width: 100%;
+        border-radius: 10%;
+        padding-bottom: 5px;
     }
 }
