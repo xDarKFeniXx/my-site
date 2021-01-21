@@ -1,5 +1,6 @@
 
 
+
 const scenaries=[
     {id:1, text: "yarn add", isUser: true, clearPrev: false},
     {id:2, text: "System: ...", isUser: false, clearPrev: false},
