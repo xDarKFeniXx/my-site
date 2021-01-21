@@ -1,4 +1,4 @@
-import '@fortawesome/fontawesome-free';
+// import '@fortawesome/fontawesome-free';
 
 const userText = [
     "ok, I've started",
