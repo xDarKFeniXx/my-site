@@ -7,4 +7,12 @@
     justify-content: space-between;
     padding: 0 10px;
     color: #d5d0ce;
+    &__right >*{
+        color:#d5d0ce;
+        text-decoration: none;
+        
+    }
+    &__right >*:hover{
+        color:#d5d0ce;
+    }
 }
