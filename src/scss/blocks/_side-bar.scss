@@ -5,6 +5,7 @@
     padding: 0 10px;
     &__list{
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
     }
     &__item{
@@ -13,7 +14,11 @@
         margin: 2px auto;
         text-align: center;
     }
-    &__item>img{
+    &__item>a{
+        text-decoration: none;
+        color:$main-color;
+    }
+    &__item>a>img{
         width: 100%;
         border-radius: 10%;
         padding-bottom: 5px;
