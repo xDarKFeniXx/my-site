@@ -7,7 +7,7 @@
 }
 .Terminal {
     max-width: 600px;
-    height: 400px;
+    height: 500px;
     box-shadow: 2px 4px 10px rgba(0,0,0,.5);
   }
   
@@ -98,6 +98,8 @@
     background: white;
     display: block;
     margin-left: 8px;
+    margin-top: auto;
+    margin-bottom: 2px;
     animation: 2000ms ease infinite alternate blink;
   }
   
