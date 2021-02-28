@@ -313,9 +313,17 @@ body {
   color: #d5d0ce;
 }
 
+.header__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .header__right > * {
   color: #d5d0ce;
   text-decoration: none;
+  display: block;
+  margin: 0 5px;
 }
 
 .header__right > *:hover {
@@ -330,6 +338,7 @@ body {
 
 .side-bar__list {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -340,7 +349,12 @@ body {
   text-align: center;
 }
 
-.side-bar__item > img {
+.side-bar__item > a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-bar__item > a > img {
   width: 100%;
   border-radius: 10%;
   padding-bottom: 5px;
@@ -383,7 +397,7 @@ body {
 
 .Terminal {
   max-width: 600px;
-  height: 400px;
+  height: 500px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -482,6 +496,8 @@ body {
   background: white;
   display: block;
   margin-left: 8px;
+  margin-top: auto;
+  margin-bottom: 2px;
   animation: 2000ms ease infinite alternate blink;
 }
 
